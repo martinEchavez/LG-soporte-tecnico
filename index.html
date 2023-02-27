@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style/style.css" />
+    <title>Estamos aquí para ayudarte | Soporte técnico LG Bogotá</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-icon">
+        <a href="#home">
+          <img class="primary-icon" src="./Assets/lg-logo.png" alt="lg-logo" />
+        </a>
+      </div>
+      <ul class="nav-list" id="navi-list">
+        <li class="list-item">
+          <a href="#home">Inicio</a>
+        </li>
+        <li class="list-item">
+          <a href="#services">Servicios</a>
+        </li>
+        <li class="list-item">
+          <a href="#location">Ubicación</a>
+        </li>
+        <li class="list-item">
+          <a href="#contact">Contacto</a>
+        </li>
+        <li class="list-item">
+          <button class="btn contact">
+            <img src="./Assets/whatsapp.svg" alt="whatsapp-logo" />
+            WhatsApp
+          </button>
+        </li>
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+    <header>
+      <div class="header-content">
+        <h1>Soporte técnico LG Bogotá</h1>
+        <h2>
+          Servicio técnico de lavadoras, televisores, Neveras,<br />estufas y
+          demás electrodomésticos LG
+        </h2>
+        <button class="btn contact">
+          <img src="./Assets/whatsapp.svg" alt="whatsapp-logo" />
+          WhatsApp
+        </button>
+      </div>
+    </header>
+    <div class="llamar">
+      <img src="./Assets/llamada-telefonica.svg" alt="icono llamada-telefonica">
+      <a href="tel:+573017668404">Llámanos al 3017668404</a>
+    </div>
+    <!--Services-->
+    <main role="main" id="services">
+      <h3>Instalación, Mantenimiento y Reparación de electrodomésticos LG</h3>
+      <div class="services-row">
+        <div class="services-column">
+          <div class="services-card">
+            <h4>Neveras</h4>
+            <img src="./Assets/nevera.webp" alt="nevera LG" />
+          </div>
+        </div>
+
+        <div class="services-column">
+          <div class="services-card">
+            <h4>Lavadoras</h4>
+            <img src="./Assets/lavadora.webp" alt="lavadora LG" />
+          </div>
+        </div>
+
+        <div class="services-column">
+          <div class="services-card">
+            <h4>Estufas</h4>
+            <img src="./Assets/estufa.webp" alt="estufas LG" />
+          </div>
+        </div>
+        <div class="services-column">
+          <div class="services-card">
+            <h4>Televisores</h4>
+            <img src="./Assets/televisor.jpg" alt="televisor LG" />
+          </div>
+        </div>
+
+        <div class="services-column">
+          <div class="services-card">
+            <h4>Hornos</h4>
+            <img src="./Assets/horno.avif" alt="horno LG" />
+          </div>
+        </div>
+
+        <div class="services-column">
+          <div class="services-card">
+            <h4>lavavajillas</h4>
+            <img src="./Assets/lavavagillas.webp" alt="lavavajillas LG" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="escribir">
+      <button class="btn contact">
+        <img src="./Assets/whatsapp.svg" alt="whatsapp-logo" />
+        WhatsApp
+      </button>
+    </div>
+
+    <section id="help">
+      <h3>¿En qué podemos ayudarte?</h3>
+      <div class="help-row">
+        <div class="help-column">
+          <div class="help-card">
+            <img
+              src="./Assets/maestro-repara-lavadora-rota.jpg"
+              alt="maestro repara lavadora LG"
+            />
+          </div>
+        </div>
+
+        <div class="help-column">
+          <h3>Servicios que ofrecemos</h3>
+          <div class="help-row">
+            <div class="help-services">
+              <img
+                src="./Assets/reparacion-de-autos.svg"
+                alt="Icono reparación"
+              />
+              <h4>Instalación</h4>
+              <p>Realizamos instalación de neveras, lavadoras, estufas y demas electrodomésticos LG</p>
+            </div>
+
+            <div class="help-services">
+              <img
+                src="./Assets/mantenimiento.svg"
+                alt="icono de mantenimiento"
+              />
+              <h4>Mantenimiento</h4>
+              <p>Ofreecemos el servicio de mantenimiento y prevención de daños en electrodomésticos LG/p>
+            </div>
+  
+            <div class="help-services">
+              <img
+                src="./Assets/configuraciones.svg"
+                alt="icono de reparación"
+              />
+              <h4>Reparación</h4>
+              <p>Tu electrodomésticos presenta fallas? Tranquilo aquí estamos nosotros para ayudarte/p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <article></article>
+    <footer></footer>
+  </body>
+  <script>
+    const toggleButton = document.getElementById('toggle-button');
+    const naviList = document.getElementById('navi-list');
+
+    toggleButton.addEventListener('click', () => {
+      naviList.classList.toggle('active');
+    });
+  </script>
+</html>
