@@ -262,7 +262,11 @@ header {
 .payment-methods .card {
   background-color: #fff;
   padding: 10px;
-  text-align: center;
+  width: 200px;
+  height: 106px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5%;
 }
 
@@ -299,9 +303,29 @@ header {
   margin-bottom: 5px;
 }
 
+.whatsapp {
+  position:fixed;
+  width: 48px;
+  height: 48px;
+  bottom: 40px;
+  right: 24px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  border: 1px solid #fff;
+  padding: 5px;
+  box-shadow: 5px 10px 8px #888888;
+  text-align:center;
+  font-size: 32px;
+}
+
+.whatsapp-icon {
+  color: #fff;
+}
+
 footer .container {
   text-align: center;
-  font-size: 3vmin;
+  font-size: 2vmin;
 }
 
 /*opening-hours*/
@@ -330,7 +354,7 @@ footer .container {
 
   .nav-list {
     list-style-type: none;
-    width: 100%;
+    width: 99%;
     text-align: center;
     padding: 0;
     display: none;
@@ -375,7 +399,7 @@ footer .container {
   }
 
   .services-column {
-    width: 100%;
+    width: 98%;
     display: block;
     margin-bottom: 20px;
   }
@@ -389,20 +413,14 @@ footer .container {
   }
 
   .help-column {
-    width: 100%;
+    width: 98%;
     display: block;
     margin-bottom: 20px;
   }
 
-  .services-column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  .payment-methods .col {
-    flex-basis: 22%;
-    padding: 4px;
+  .payment-methods .card {
+    width: 68px;
+    height: 40px;
   }
 }
 /*Media max-width 767px*/
