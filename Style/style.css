@@ -4,6 +4,9 @@
   --lg-info-color: #6b6b6b;
   --lg-background-section-color: #f8f8f8;
   --lg-footer-color: #333;
+  --lg-principal-title: 7vmin;
+  --lg-title: 5vmin;
+  --lg-sub-title: 3vmin;
 }
 
 body {
@@ -101,13 +104,13 @@ header {
   text-align: center;
 }
 
-.header-content h1 {
-  font-size: 7vmin;
+.principal-title {
+  font-size: var(--lg-principal-title);
   color: var(--lg-footer-color);
 }
 
-.header-content h2 {
-  font-size: 3vmin;
+.sub-title {
+  font-size: var(--lg-sub-title);
   color: var(--lg-footer-color);
   margin-bottom: 2rem;
 }
@@ -131,27 +134,24 @@ header {
 /*Services*/
 .services-column {
   float: left;
-  width: 16%;
-  padding: 0 5px;
+  width: 15%;
+  padding: 0 10px;
   margin: 5px 0;
 }
 
-#services h3 {
-  font-size: 5vmin;
+.lg-title {
+  font-size: var(--lg-title);
   text-align: center;
-  margin: 15px 5px;
+  margin: 16px 6px;
 }
 
 /* Remove extra left and right margins, due to padding */
 .services-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
-}
-
-/* Clear floats after the columns */
-.services-row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .services-card {
@@ -163,7 +163,7 @@ header {
 
 .services-card h4 {
   color: var(--lg-footer-color);
-  font-size: 3vmin;
+  font-size: var(--lg-sub-title);
   margin: 5px;
 }
 
@@ -174,18 +174,12 @@ header {
 
 .escribir {
   text-align: center;
-  margin: 10px
+  margin: 24px
 }
 
 /*help*/
 .help-content {
   display: flex;
-}
-
-#help h3 {
-  font-size: 5vmin;
-  text-align: center;
-  margin: 15px 5px;
 }
 
 .help-column {
@@ -216,17 +210,55 @@ header {
 
 .help-services img {
   margin-top: 8px;
-  width: 64px
+  width: 48px
 }
 
 /*help*/
 
-/*ubication*/
+.testimonials-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 
-.ubication h3 {
-  font-size: 4vmin;
+.testimonial {
+  width: 264px;
+  margin-top: 12px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.testimonial h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.testimonial span {
+  font-size: 16px;
+  color: #999;
+  font-style: italic;
+}
+
+
+/*ubication*/
 
 .ubication-content iframe {
   width: 100%;
@@ -242,27 +274,22 @@ header {
   padding: 10px;
 }
 
-.payment-methods h3 {
-  text-align: center;
-  font-size: 4vmin;
-  margin-bottom: 10px;
-}
-
 .payment-methods .row {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  margin: -10px;
 }
 
 .payment-methods .col {
-  flex-basis: 12%;
+  flex-basis: 8%;
   padding: 4px;
 }
 
 .payment-methods .card {
   background-color: #fff;
   padding: 10px;
-  width: 200px;
+  width: 140px;
   height: 106px;
   display: flex;
   justify-content: center;
@@ -284,12 +311,6 @@ header {
   padding: 10px;
   margin-bottom: 20px;
   text-align: center;
-}
-
-.opening-hours h3 {
-  text-align: center;
-  font-size: 4vmin;
-  margin-bottom: 10px;
 }
 
 .opening-hours ul {
@@ -409,18 +430,18 @@ footer .container {
   }
 
   .help-services img {
-    width: 40px
+    width: 36px
   }
 
   .help-column {
     width: 98%;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   .payment-methods .card {
-    width: 68px;
-    height: 40px;
+    width: 64px;
+    height: 48px;
   }
 }
 /*Media max-width 767px*/
