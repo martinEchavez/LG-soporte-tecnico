@@ -91,7 +91,7 @@ body {
 /*Header*/
 header {
   height: 90vh;
-  background: url('../Assets/lg-home.webp');
+  background: url('https://resourceslandingpages.s3.amazonaws.com/lgsoportetecnico/lg-home.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -405,7 +405,7 @@ footer .container {
   }
 
   header {
-    background: url('../Assets/lg-home-pequeña.webp');
+    background: url('https://resourceslandingpages.s3.amazonaws.com/lgsoportetecnico/lg-home-small.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
