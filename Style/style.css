@@ -91,7 +91,7 @@ body {
 /*Header*/
 header {
   height: 90vh;
-  background: url('https://resourceslandingpages.s3.amazonaws.com/lgsoportetecnico/lg-home.webp');
+  background: url('https://resourceslandingpages.s3.amazonaws.com/lgsoportetecnico/tecnico-arreglando-lavadora.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -106,13 +106,15 @@ header {
 
 .principal-title {
   font-size: var(--lg-principal-title);
-  color: var(--lg-footer-color);
+  color: var(--lg-color);
 }
 
 .sub-title {
   font-size: var(--lg-sub-title);
-  color: var(--lg-footer-color);
+  color: black;
   margin-bottom: 2rem;
+  background-color:rgba(255, 255, 255, 0.806);
+  border-radius: 5px;
 }
 /*Header*/
 
@@ -405,7 +407,7 @@ footer .container {
   }
 
   header {
-    background: url('https://resourceslandingpages.s3.amazonaws.com/lgsoportetecnico/lg-home-small.webp');
+    background: url('https://resourceslandingpages.s3.amazonaws.com/lgsoportetecnico/tecnico-arreglando-lavadora.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
