@@ -13,19 +13,14 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /*Navbar*/
 .navbar {
-  background-color: var(--lg-background-section-color);
-  color: black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  font-size: 16px;
-  position: absolute;
+  z-index: 1;
+  background: rgba(221, 119, 119, 0);
+  font-weight: bold;
 }
 
 .primary-icon {
@@ -52,7 +47,7 @@ body {
 }
 
 .contact {
-  display: inline-block;
+  display: inline;
   width: 112px;
   border: none;
   background-color: var(--lg-color);
@@ -86,22 +81,31 @@ body {
   background-color: var(--lg-color);
   margin-bottom: 4px;
 }
+
 /*Navbar*/
 
 /*Header*/
-header {
+.header {
   height: 90vh;
-  background: url('https://resourceslandingpages.s3.amazonaws.com/lgsoportetecnico/tecnico-arreglando-lavadora.webp');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  background-color: black;
 }
 
-.header-content {
+.content {
+  z-index: 1;
+  max-width: 60Rem;
+  margin: auto;
   text-align: center;
+  color: #fff;
+}
+
+.header-carousel {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  opacity: 0.7;
 }
 
 .principal-title {
@@ -113,14 +117,15 @@ header {
   font-size: var(--lg-sub-title);
   color: black;
   margin-bottom: 2rem;
-  background-color:rgba(255, 255, 255, 0.806);
+  background-color: rgba(255, 255, 255, 0.806);
   border-radius: 5px;
 }
+
 /*Header*/
 
 .llamar {
   text-align: center;
-  background-color: var(--lg-info-color);
+  background-color: var(--lg-color-hover);
 }
 
 .llamar a {
@@ -136,7 +141,7 @@ header {
 /*Services*/
 .services-column {
   float: left;
-  width: 15%;
+  width: 30%;
   padding: 0 10px;
   margin: 5px 0;
 }
@@ -171,6 +176,7 @@ header {
 .services-card img {
   width: 50%;
 }
+
 /*Services*/
 
 .escribir {
@@ -333,18 +339,18 @@ header {
 }
 
 .whatsapp {
-  position:fixed;
+  position: fixed;
   width: 48px;
   height: 48px;
   bottom: 40px;
   right: 24px;
-  background-color:#25d366;
-  color:#FFF;
-  border-radius:50px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
   border: 1px solid #fff;
-  padding: 5px;
+  padding: 0;
   box-shadow: 5px 10px 8px #888888;
-  text-align:center;
+  text-align: center;
   font-size: 32px;
 }
 
@@ -403,7 +409,7 @@ footer .container {
   .btn {
     font-size: 16px;
   }
-  
+
   .contact img {
     width: 20px;
   }
@@ -412,17 +418,31 @@ footer .container {
     display: block;
   }
 
-  header {
-    background: url('https://resourceslandingpages.s3.amazonaws.com/lgsoportetecnico/tecnico-arreglando-lavadora.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  .header {
+    height: 40vh;
   }
-  
+
+  .header-carousel {
+    height: 40%;
+  }
+
+  .content {
+    padding-bottom: 2rem;
+}
+
+.content h1 {
+  font-size: 18px;
+  margin-bottom: 2;
+}
+
+.content p {
+  font-size: 15px;
+}
+
   .llamar a {
     font-size: 24px;
   }
-  
+
   .llamar img {
     width: 20px;
   }
@@ -452,4 +472,5 @@ footer .container {
     height: 48px;
   }
 }
+
 /*Media max-width 767px*/
